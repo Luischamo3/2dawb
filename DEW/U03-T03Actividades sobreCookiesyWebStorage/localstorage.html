@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body onload="">
+
+  <div id="fondo">
+<input type="button" onclick="contadorClicks()" value="Haz Click" />
+<div id="contador"></div>
+
+    <button type="button" class="btn btn-default" id="lib-button" onclick="libIt()">Generar</button>
+    <div id="questions" style="border:2px solid blue"></div>
+    <input type="button" onclick="GuardarDatos()" value="Guardar"/>
+    <ul>
+      <li>Respuesta: <input type="text" id="resp"  >
+    </ul>
+
+
+    <!-- <textarea id="res" rows="8" cols="80" onkeyup="recuperarDatos()"></textarea> -->
+<input type="button" onclick="recuperarDatos()" value="Cargar"/>
+    <div id="res" onclick=""></div>
+
+<input type="button" onclick="BorrarDatos()" value="Borrar"/>
+
+  </div>
+  <script type="text/javascript" src="localstorage.js"></script>
+
+</body>
+
+</html>

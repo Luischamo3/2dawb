@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Formulario de Pago</title>
+</head>
+
+<body>
+  <form action="https://www.w3schools.com/action_page.php">
+    <!-- <section> -->
+    <section>
+
+      <h1>Obligado al Pgo</h1>
+      <div>
+
+        <label for="idnif" class="">
+          <span class=" ">DNI(*)</span>&nbsp
+              <input id="nif" name="nif" type="text" placeholder="Ejemplo 11111111-P" class="" id="idnif" maxlength="10" required pattern="[0-9]{8}-[A-Z]{1}">
+              <strong><abbr title="obligatorio">*</abbr></strong>
+        </label>1
+      </div>
+      <div>
+        <label for="idanrs" class="">
+          <span class=" ">Apellidos y Nombres o Razón Social(*)</span>
+              <input id="nif" name="nif" type="text" placeholder="Introduzca los datos" class="" id="idanrs" maxlength="10" required>
+              <strong><abbr title="obligatorio">*</abbr></strong>
+        </label>
+      </div>
+      <div>
+        <label for="idsigla" class="">
+          <span class=" ">Sigla(*)</span>
+              <select name="" id="" required>
+                <option value="0">Seleccione una Sigla</option>
+                <option value='2'>A</option>
+        	      <option value='3'>B</option>
+        	      <option value='4'>C</option>
+        	      <option value='5'>D</option>
+        	      <option value='6'>E</option>
+              </select>
+        </label>
+      </div>
+      <div>
+        <label for="idvp" class="">
+          <span class=" ">Nombre via Pública(*)</span>
+              <input id="nif" name="nif" type="text" placeholder="Introduzca Nombre" class="" id="idvp" maxlength="10" required>
+              <strong><abbr title="obligatorio">*</abbr></strong>
+        </label>
+      </div>
+
+      <div>
+        <label for="idnum" class="">
+          <span class=" ">Número</span>
+              <input id="nif" name="nif" type="number" placeholder="" class="" id="idnum" maxlength="10" >
+              <strong><abbr title="obligatorio">*</abbr></strong>
+        </label>
+      </div>
+      <div>
+        <label for="idescalera" class="">
+          <span class=" ">Escalera</span>
+              <input id="nif" name="nif" type="number" placeholder="" class="" id="iescalera" maxlength="10">
+        </label>
+      </div>
+      <div>
+        <label for="idpiso" class="">
+          <span class=" ">Piso</span>
+              <input id="nif" name="nif" type="number" placeholder="" class="" id="idpiso" maxlength="10">
+        </label>
+      </div>
+      <div>
+        <label for="idpuerta" class="">
+          <span class=" ">Puerta</span>
+              <input id="nif" name="nif" type="number" placeholder="" class="" id="idpuerta" maxlength="10">
+        </label>
+      </div>
+      <div>
+        <label for="idphone" class="">
+          <span class=" ">Teléfono</span>
+              <input id="nif" name="nif" type="number" placeholder="" class="" id="idphone" maxlength="9" pattern="\d{8}$">
+        </label>
+      </div>
+      <div>
+        <label for="idfax" class="">
+          <span class=" ">Fax</span>
+              <input id="nif" name="nif" type="number" placeholder="" class="" id="idfax" maxlength="9">
+        </label>
+      </div>
+
+      <div>
+        <label <span>Provincia</span>
+        <select name="" id="">
+          <option value="0">Seleccione una Provincia</option>
+          <option value='2'>Alava</option>
+  	      <option value='3'>Albacete</option>
+  	      <option value='4'>Alicante</option>
+  	      <option value='5'>Almerí­a</option>
+  	      <option value='6'>Asturias</option>
+        </select>
+
+      <label
+      <span>Municipio</span>
+      <select name="" id="">
+        <option value="0">Seleccione una Municipio</option>
+        <option value='2'>Alava</option>
+        <option value='3'>Albacete</option>
+        <option value='4'>Alicante</option>
+        <option value='5'>Almerí­a</option>
+        <option value='6'>Asturias</option>
+      </select>
+    </label>
+      </div>
+      <div>
+        <label for="idphone" class="">
+        <span class=" ">Código Postal</span>
+            <input id="nif" name="nif" type="number" placeholder="" class="" id="idphone" maxlength="5" pattern="[0-9]{5}">
+      </div>
+
+     </section>
+  <!--  Segunda Parte del Formulario-->
+     <section>
+      <h1>Tasas</h1>
+    <div>
+
+      <label for="idtramite" class="">
+        <span class=" ">Trámite(*)</span>
+        <strong><abbr title="obligatorio">*</abbr></strong>
+
+            <select name="" id="" required>
+              <option value="1">Seleccione una opción</option>
+            <option value="2">Tramite 1</option>
+            <option value="3">Tramite 2</option>
+            <option value="4">Tramite 3</option>
+            <option value="5">Tramite 4</option>
+            <option value="6">Tramite 5</option>
+            </select>
+
+
+      </label>
+      </div>
+      <div>
+        <label for="idvp" class="">
+        <span class=" ">Número de expediente</span>
+            <input id="nif" name="nif" type="number" placeholder="" class="" id="idvp" maxlength="10">
+      </label>
+      </div>
+
+      <div>
+        <label for="idvp" class="">
+        <span class=" ">Número de Liquidación</span>
+            <input id="nif" name="nif" type="number" placeholder="" class="" id="idvp" maxlength="10">
+      </label>
+      </div>
+
+      <div>
+        <label for="idef" class="">
+        <input type="radio" name="idef" value="EF">
+        <span>En Efectivo</span>
+      </label>
+
+
+        <label for="idca" class="">
+        <input type="radio" name="idca" value="CA">
+          <span>Adeudo en cta.</span>
+      </label>
+
+        <label for="idpt" class="">
+      <input type="radio" name="idpt" value="other">
+        <span>Pago Telemático</span>
+    </label>
+
+
+
+      </div>
+
+
+      <div>
+        <label for="idconcept">Concepto</label>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        <textarea id="concept" maxlength="150"></textarea>
+      </div>
+
+      <div>
+
+        <input type="submit" value="Enviar">
+        <button type="button">Volver</button>
+        <button type="reset">Limpiar Formulario</button>
+      </div>
+    </section>
+  </form>
+
+
+</body>
+
+</html>
