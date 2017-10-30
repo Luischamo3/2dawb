@@ -1,0 +1,26 @@
+;
+;  Database file 19.0.10.in-addr.arpa.dns for Default zone scope in zone 19.0.10.in-addr.arpa.
+;      Zone version:  9
+;
+
+@                       IN  SOA homer. hostmaster. (
+                        		9            ; serial number
+                        		900          ; refresh
+                        		600          ; retry
+                        		86400        ; expire
+                        		3600       ) ; default TTL
+
+;
+;  Zone NS records
+;
+
+@                       NS	homer.
+
+;
+;  Zone records
+;
+
+4                       PTR	bart.simpsons19.edu.
+5                       PTR	marge.simpsons19.edu.
+6                       PTR	lisa.simpsons19.edu.
+7                       PTR	maggie.simpsons19.edu.

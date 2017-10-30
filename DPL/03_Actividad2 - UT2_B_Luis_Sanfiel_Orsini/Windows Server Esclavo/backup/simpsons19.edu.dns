@@ -1,0 +1,22 @@
+;
+;  Database file simpsons19.edu.dns for Default zone scope in zone simpsons19.edu.
+;      Zone version:  1
+;
+
+@                       IN  SOA win-lk0os9i7bpt. hostmaster. (
+                        		1            ; serial number
+                        		900          ; refresh
+                        		600          ; retry
+                        		86400        ; expire
+                        		3600       ) ; default TTL
+
+;
+;  Zone NS records
+;
+
+@                       NS	win-lk0os9i7bpt.
+
+;
+;  Zone records
+;
+

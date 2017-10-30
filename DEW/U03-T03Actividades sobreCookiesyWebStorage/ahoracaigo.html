@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body onload="">
+
+  <!--ahoracaigo  -->
+
+  <div class="container">
+    <h2>Bienvenido esto es ¡Ahora Caigo!</h2>
+    <p id="aciertos">Aciertos: </p>
+    <p id="fallos">fallos: </p>
+
+    <h3 id="qst"></h3>
+
+    <input type="button" onclick="question()" value="Ahora Caigo" />
+    <div id="qst"></div>
+  <input type="text" id="word"/>
+
+
+
+    <input type="button" onclick="question()();" value="Comprobar Respuesta" /> 
+    <textarea id="history" onkeyup="recuperarDatos()"></textarea><br/>
+    <input type="reset" onclick="" value="Borrar" />
+
+
+    <script type="text/javascript" src="ahoracaigo.js"></script>
+    <textarea id="history" rows="8" cols="80"></textarea>
+</body>
+
+
+
+</html>

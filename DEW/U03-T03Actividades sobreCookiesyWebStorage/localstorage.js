@@ -15,62 +15,34 @@ function libIt() {
     "Cuántos jugadores hay por alineación de inicio en un partido de Fútbol"
   ];
 
-  //Número aleatorio de preguntas
-
   var indice_aleatorio = Math.floor(Math.random() * preguntas.length);
-
-  //alert(preguntas[indice_aleatorio]);
-
   document.getElementById('questions').innerHTML = preguntas[indice_aleatorio];
-
-  // alert(count);
-
-  /*for (var clave in localStorage){
-var valor = localStorage[clave];
-alert(valor);*/
   var libButton = document.getElementById('lib-button');
   libButton.addEventListener('click', libIt);
 }
+var respuesta = new Array();
 
-function GuardarDatos(divstory) {
-
-  var divstory=document.getElementById('resp').value;
-  var palabra = "";
-  var lista = [divstory];
-  // var palabra=;
-  for(var i = 0; i < lista.length; i++){
-if (typeof lista[i] !== "undefined") {
-  palabra = lista[i];
-
-}
+function GuardarDatos() {
+  var divstory = document.getElementById('resp').value;
+  respuesta.push(divstory);
+  for (i = 0; i < respuesta.length; i++) {
+    divstory += respuesta[i] + '</br>';
   }
-  alert(palabra);
-
-  /*  for(var i=1;i<=divstory.length;i++)
-   {
-         localStorage.setItem("frases", divstory);
-   }*/
-
-
-  // document.getElementById('res').innerHTML= localStorage.getItem("frase",divstory);
-  return divstory;
+  localStorage.setItem("respuesta", JSON.stringify(respuesta));
 }
 
 function recuperarDatos() {
-  var save = GuardarDatos();
-  if (localStorage.frases != "") {
-    document.getElementById("res").innerHTML = save;
-
+  var save = JSON.parse(localStorage.getItem("respuesta"));
+  if (localStorage.respueta != "" && localStorage.respuesta != null) {
+    document.getElementById("res").innerHTML = save + "\n";
   } else {
     document.getElementById("res").innerHTML = "No existe ningún dato";
   }
-  return save;
 }
-
 
 function BorrarDatos() {
   var dato = recuperarDatos();
-  localStorage.removeItem("frases", dato);
+  localStorage.removeItem("respuesta");
 }
 
 function contadorClicks() {
