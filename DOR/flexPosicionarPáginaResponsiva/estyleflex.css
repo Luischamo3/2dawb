@@ -1,0 +1,62 @@
+html {
+    font-size: 80%;
+}
+
+.container {
+    display:flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.container > *{
+  flex: 1 100%;
+ 
+}
+
+.article{
+    background-color: aquamarine;
+    font-size: 1.5em;
+}
+
+.header{
+    background-color: teal;
+    font-size: 1.5em;
+}
+.izq {
+    background-color: chocolate;
+    font-size: 1em;
+}
+.der{
+    background-color: brown;
+    font-size: 1em;
+}
+.pie{
+    background-color: rgb(42, 59, 25);
+    font-size: 1em;
+}
+
+@media screen and (min-width: 600px) {
+  
+    .container{
+         font-size: 100%;
+    }
+    .aside {
+    flex: 1;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .container{
+         font-size: 120%;
+    }
+  
+    .article {
+    flex: 3;
+  }
+  .izq {
+    order: -1;
+  }
+  .header{
+    order: -1;
+  }
+}

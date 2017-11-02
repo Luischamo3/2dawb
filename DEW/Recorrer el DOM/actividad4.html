@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="actividad4.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .opcion {
+            float: left;
+            margin: 0px;
+            margin-right: 10px;
+            border: 0px white solid;
+        }
+
+        .seleccionada {
+            color: white;
+            background-color: red;
+            border: 1px solid red;
+        }
+
+        .no-seleccionada {
+            color: red;
+            background-color: white;
+        }
+
+        .contenido {
+            position: absolute;
+            top: 28px;
+            left: 10px;
+            width: 800px;
+            height: 400px;
+        }
+
+        .oculto {
+            visibility: hidden;
+            border: 0px white solid;
+        }
+
+        .visible {
+            visibility: visible;
+            border: 1px red solid;
+        }
+    </style>
+<div class="opcion seleccionada" id="oPortada" onclick="cambiar('oPortada')">Portada</div>
+<div class="opcion no-seleccionada" id="oNacional" onclick="cambiar('Nacional')">Nacional</div>
+<div class="opcion no-seleccionada" id="oInternacional" onclick="cambiar('Internacional')">Internacional</div>
+<div class="opcion no-seleccionada" id="oDeportes" onclick="cambiar('Deportes')">Deportes</div>
+<div class="contenido visible" id="cPortada">Soy la portada</div>
+<div class="contenido oculto" id="cNacional">Soy la sección Nacional</div>
+<div class="contenido oculto" id="cInternacional">Soy la sección Internacional</div>
+<div class="contenido oculto" id="cDeportes">Soy los deportes</div>
+</body>
+
+</html>

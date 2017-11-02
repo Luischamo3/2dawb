@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/calendario.css">
+
+  <title>Document</title>
+</head>
+
+<body onload="">
+
+  <div id="fechactual"></div>
+  <button type="button" name="search" onclick="previousmonth()">Anterior</button>
+  <input type="text" id="m" placeholder="MES" value="Mes" onkeypress="buscar()" title="Presione la tecla enter cada vez que introduzca un valor y el calendario buscará automáticamente" />
+  <input type="text" id="y" placeholder="AÑO" value="Año" onkeypress="buscar()" title="Presione la tecla enter cada vez que introduzca un valor y el calendario buscará automáticamente" />
+  <button type="button" name="search" onclick="nextmonth()">Siguiente</button>
+  <h1>Calendario Flexbox</h1>
+  <div class="contenedor">
+    <div class="mesactual"></div>
+    <div class="contenidos">
+
+      <div class="semana">L</div>
+      <div class="semana">M</div>
+      <div class="semana">X</div>
+      <div class="semana">J</div>
+      <div class="semana">V</div>
+      <div class="semana">S</div>
+      <div class="semana">D</div>
+    </div>
+
+    <div class="contenidos">
+
+      <div class="fila"></div>
+      <div class="fila"></div>
+      <div class="fila"></div>
+      <div class="fila"></div>
+      <div class="fila"></div>
+      <div class="fila"></div>
+      <div class="fila"></div>
+    </div>
+    <div class="contenidos">
+
+      <div class="fila"></div>
+      <div class="fila"></div>
+      <div class="fila"></div>
+      <div class="fila"></div>
+      <div class="fila"></div>
+      <div class="fila"></div>
+      <div class="fila"></div>
+    </div>
+    <div class="contenidos">
+
+      <div class="fila"></div>
+      <div class="fila"></div>
+      <div class="fila"></div>
+      <div class="fila"></div>
+      <div class="fila"></div>
+      <div class="fila"></div>
+      <div class="fila"></div>
+    </div>
+    <div class="contenidos">
+
+      <div class="fila"></div>
+      <div class="fila"></div>
+      <div class="fila"></div>
+      <div class="fila"></div>
+      <div class="fila"></div>
+      <div class="fila"></div>
+      <div class="fila"></div>
+    </div>
+
+    <div class="contenidos">
+
+      <div class="fila"></div>
+      <div class="fila"></div>
+      <div class="fila"></div>
+      <div class="fila"></div>
+      <div class="fila"></div>
+      <div class="fila"></div>
+      <div class="fila"></div>
+    </div>
+    <div class="contenidos">
+
+      <div class="fila"></div>
+      <div class="fila"></div>
+      <div class="fila"></div>
+      <div class="fila"></div>
+      <div class="fila"></div>
+      <div class="fila"></div>
+      <div class="fila"></div>
+    </div>
+
+
+  </div>
+  <script src="calendario.js"></script>
+</body>
+
+</html>

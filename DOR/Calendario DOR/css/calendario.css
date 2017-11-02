@@ -1,0 +1,30 @@
+.contenedor {
+
+    border: 2px solid #000;
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+border-radius: 5px;
+
+}
+.contenidos {
+    display: flex;
+flex-direction: row;
+align-content: center;
+
+
+}
+.semana , .fila   {
+flex-basis: 50px;
+    border: 1px solid #000;
+    /*vertical-align: middle;*/
+    padding: 15px;
+
+}
+.semana {
+  background-color: #3b3b3b;
+}
+.mesactual {
+  background-color: #0e734c;
+  font-size: 30px;
+}
